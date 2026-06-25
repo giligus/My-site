@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Personal website for Gilig, presenting experience, selected portfolio work, and contact links."
+    >
+    <title>Gilig | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Go to top">Gilig</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero__image"
+          src="assets/hero-workspace.png"
+          alt="A refined desk setup with a laptop, notebook, and warm daylight."
+        >
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Developer | Builder | Problem Solver</p>
+          <h1 id="hero-title">Hi, I am Gilig. I build practical software that makes work clearer.</h1>
+          <p class="hero__intro">
+            I turn ideas, processes, and rough requirements into usable digital products.
+            My work focuses on clean interfaces, reliable workflows, automation, and systems
+            that help people move faster with less friction.
+          </p>
+          <div class="hero__actions" aria-label="Primary actions">
+            <a class="button button--primary" href="#portfolio">View portfolio</a>
+            <a class="button button--ghost" href="#experience">My experience</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" aria-label="Professional highlights">
+        <div class="section__inner stats">
+          <div>
+            <span class="stats__value">Full-stack</span>
+            <span class="stats__label">Product-minded development</span>
+          </div>
+          <div>
+            <span class="stats__value">Automation</span>
+            <span class="stats__label">Processes, tooling, and AI-assisted workflows</span>
+          </div>
+          <div>
+            <span class="stats__value">Portfolio</span>
+            <span class="stats__label">Selected projects ready for GitHub</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--split" id="about" aria-labelledby="about-title">
+        <div class="section__inner split">
+          <div class="section__heading">
+            <p class="eyebrow">About Me</p>
+            <h2 id="about-title">I like building software that feels simple on the outside and solid underneath.</h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I am a hands-on developer and builder who enjoys taking a problem from first
+              conversation to working product. I care about structure, readable code,
+              useful interfaces, and solutions that stay maintainable after the first release.
+            </p>
+            <p>
+              This website is designed to present who I am, what I have worked on, and the
+              kind of projects I can contribute to. As my GitHub repositories grow, each
+              portfolio item can connect directly to live demos, source code, and case studies.
+            </p>
+            <div class="skill-list" aria-label="Core strengths">
+              <span>Web applications</span>
+              <span>Automation</span>
+              <span>Data workflows</span>
+              <span>AI-assisted tools</span>
+              <span>Product thinking</span>
+              <span>Clean UI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section__inner">
+          <div class="section__heading">
+            <p class="eyebrow">Experience</p>
+            <h2 id="experience-title">A practical path through product, engineering, and execution.</h2>
+          </div>
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="experience-item__meta">
+                <span>Current</span>
+                <strong>Independent Projects</strong>
+              </div>
+              <div>
+                <h3>Developer and product builder</h3>
+                <p>
+                  Building portfolio projects, workflow tools, and experiments that combine
+                  software engineering, automation, and clear user experience.
+                </p>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-item__meta">
+                <span>Recent</span>
+                <strong>Automation and Systems</strong>
+              </div>
+              <div>
+                <h3>Process improvement and technical execution</h3>
+                <p>
+                  Designing tools and structured flows that reduce manual work, improve
+                  visibility, and make repeated tasks easier to manage.
+                </p>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-item__meta">
+                <span>Foundation</span>
+                <strong>Software Craft</strong>
+              </div>
+              <div>
+                <h3>Reliable code, clear interfaces, and maintainable delivery</h3>
+                <p>
+                  Working across frontend, backend, data, and documentation with attention
+                  to readable implementation and smooth handoff.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--portfolio" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section__inner">
+          <div class="section__heading">
+            <p class="eyebrow">Portfolio</p>
+            <h2 id="portfolio-title">Selected work to show how I think and build.</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card">
+              <span class="project-card__tag">Web App</span>
+              <h3>Aegis Interface</h3>
+              <p>
+                A dashboard concept for turning complex operational workflows into
+                calm, scannable decisions and next actions.
+              </p>
+              <dl class="project-card__details">
+                <div>
+                  <dt>Focus</dt>
+                  <dd>UX, dashboard design, workflow clarity</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Portfolio concept</dd>
+                </div>
+              </dl>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">Repository</a>
+            </article>
+            <article class="project-card">
+              <span class="project-card__tag">Automation</span>
+              <h3>Signal Toolkit</h3>
+              <p>
+                Lightweight utilities for recurring tasks, reporting, and cleaner
+                handoffs between people, tools, and data sources.
+              </p>
+              <dl class="project-card__details">
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Automation, scripts, repeatable workflows</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Expandable project</dd>
+                </div>
+              </dl>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">Repository</a>
+            </article>
+            <article class="project-card">
+              <span class="project-card__tag">AI Workflow</span>
+              <h3>Notebook Lab</h3>
+              <p>
+                A space for prototypes, model-assisted workflows, structured notes,
+                and experiments that can mature into production tools.
+              </p>
+              <dl class="project-card__details">
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Research, AI assistance, rapid prototyping</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Active lab</dd>
+                </div>
+              </dl>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">Repository</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="section__inner contact">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let us build something useful.</h2>
+          </div>
+          <div class="contact__panel">
+            <p>
+              I am open to interesting projects, collaborations, and opportunities where
+              thoughtful software can make a real workflow better.
+            </p>
+            <div class="contact__links">
+              <a class="button button--primary" href="mailto:hello@example.com">Email</a>
+              <a class="button button--ghost button--dark" href="https://github.com/" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a class="button button--ghost button--dark" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span data-year></span> Gilig. Built for GitHub Pages.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
