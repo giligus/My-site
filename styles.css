@@ -235,8 +235,8 @@ a {
 
 .project-grid {
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   margin-top: 34px;
 }
 
@@ -245,21 +245,23 @@ a {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  min-height: 420px;
-  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  min-height: 390px;
+  padding: 20px;
 }
 
 .project-card__brand {
   align-items: center;
   display: flex;
-  gap: 12px;
-  margin-bottom: 22px;
-  min-height: 56px;
+  gap: 10px;
+  margin-bottom: 14px;
+  min-height: 40px;
 }
 
 .project-card__brand > img {
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
 }
 
 .project-card__logo {
@@ -268,22 +270,22 @@ a {
   border-radius: 8px;
   color: #fff;
   display: inline-flex;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 800;
   justify-content: center;
-  min-height: 54px;
-  min-width: 98px;
-  padding: 0 14px;
+  min-height: 40px;
+  min-width: 76px;
+  padding: 0 10px;
 }
 
 .project-card__logo img {
-  height: 34px;
-  width: 34px;
+  height: 28px;
+  width: 28px;
 }
 
 .project-card__logo--kan {
   direction: ltr;
-  font-size: 1.1rem;
+  font-size: 0.92rem;
 }
 
 .project-card__tag {
@@ -295,22 +297,25 @@ a {
 }
 
 .project-card h3 {
-  font-size: 1.35rem;
-  margin: 42px 0 12px;
+  font-size: 1.18rem;
+  margin: 30px 0 10px;
 }
 
 .project-card__brand + .project-card__tag + h3 {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .project-card p {
   color: var(--muted);
-  margin: 0 0 22px;
+  font-size: 0.94rem;
+  line-height: 1.45;
+  margin: 0 0 16px;
 }
 
 .project-card a {
   color: var(--teal-dark);
   font-weight: 800;
+  margin-top: auto;
   text-decoration: none;
 }
 
@@ -321,9 +326,9 @@ a {
 .project-card__details {
   border-top: 1px solid var(--line);
   display: grid;
-  gap: 12px;
-  margin: 0 0 24px;
-  padding-top: 18px;
+  gap: 10px;
+  margin: 0 0 18px;
+  padding-top: 14px;
 }
 
 .project-card__details div {
@@ -340,6 +345,8 @@ a {
 
 .project-card__details dd {
   color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.35;
   margin: 0;
 }
 
@@ -349,6 +356,10 @@ a {
 
 .section--portfolio {
   background: #fbfaf6;
+}
+
+.section--portfolio .section__inner {
+  max-width: 1280px;
 }
 
 .split,
@@ -459,6 +470,12 @@ a {
   font-size: 0.94rem;
   padding: 24px clamp(20px, 5vw, 72px);
   text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 840px) {
