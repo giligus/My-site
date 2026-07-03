@@ -64,8 +64,9 @@ if (emailForm) {
     const message = formData.get("message");
     const subject = `Message from ${name}`;
     const body = [`Name: ${name}`, `Email: ${email}`, "", message].join("\n");
+    const recipient = ["giligus", "gmail.com"].join("@");
 
-    window.location.href = `mailto:giligus@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     closeEmailModal();
     emailForm.reset();
   });
