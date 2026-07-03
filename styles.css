@@ -146,7 +146,9 @@ a {
   align-items: center;
   border: 1px solid transparent;
   border-radius: 8px;
+  cursor: pointer;
   display: inline-flex;
+  font: inherit;
   font-weight: 800;
   justify-content: center;
   min-height: 46px;
@@ -462,6 +464,107 @@ a {
 .contact__links {
   justify-content: end;
   margin-top: 28px;
+}
+
+.email-modal {
+  background: transparent;
+  border: 0;
+  max-width: min(560px, calc(100vw - 32px));
+  padding: 0;
+  width: 100%;
+}
+
+.email-modal::backdrop {
+  background: rgba(17, 20, 24, 0.56);
+  backdrop-filter: blur(5px);
+}
+
+.email-form {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 28px 80px rgba(17, 20, 24, 0.24);
+  color: var(--ink);
+  display: grid;
+  gap: 18px;
+  padding: clamp(22px, 5vw, 34px);
+}
+
+.email-form__header {
+  align-items: start;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.email-form h2 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  line-height: 1;
+  margin: 0;
+}
+
+.email-form__close {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+  min-height: 38px;
+  padding: 0 12px;
+}
+
+.email-form__close:hover {
+  background: rgba(17, 20, 24, 0.06);
+  color: var(--ink);
+}
+
+.email-form label {
+  color: var(--ink);
+  display: grid;
+  font-size: 0.9rem;
+  font-weight: 800;
+  gap: 8px;
+}
+
+.email-form input,
+.email-form textarea {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font: inherit;
+  padding: 12px 14px;
+  width: 100%;
+}
+
+.email-form input:focus,
+.email-form textarea:focus {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(14, 118, 111, 0.14);
+  outline: 0;
+}
+
+.email-form textarea {
+  resize: vertical;
+}
+
+.email-form__actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.email-form__actions a {
+  color: var(--teal-dark);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.email-form__actions a:hover {
+  text-decoration: underline;
 }
 
 .site-footer {

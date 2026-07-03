@@ -249,7 +249,7 @@
         <div class="section__inner contact">
           <div>
             <p class="eyebrow">Contact</p>
-            <h2 id="contact-title">Let us build something useful.</h2>
+            <h2 id="contact-title">Let's be in contact.</h2>
           </div>
           <div class="contact__panel">
             <p>
@@ -257,11 +257,8 @@
               thoughtful software can make a real workflow better.
             </p>
             <div class="contact__links">
-              <a class="button button--primary" href="mailto:hello@example.com">Email</a>
-              <a class="button button--ghost button--dark" href="https://github.com/" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-              <a class="button button--ghost button--dark" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+              <button class="button button--primary" type="button" data-open-email>Email</button>
+              <a class="button button--ghost button--dark" href="https://www.linkedin.com/in/gil-gean-a832a16a/" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
             </div>
@@ -269,6 +266,34 @@
         </div>
       </section>
     </main>
+
+    <dialog class="email-modal" data-email-modal aria-labelledby="email-modal-title">
+      <form class="email-form" data-email-form>
+        <div class="email-form__header">
+          <div>
+            <p class="eyebrow">Email</p>
+            <h2 id="email-modal-title">Send Gil a message</h2>
+          </div>
+          <button class="email-form__close" type="button" data-close-email aria-label="Close email form">Close</button>
+        </div>
+        <label>
+          Your name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          Your email
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="email-form__actions">
+          <button class="button button--primary" type="submit">Send email</button>
+          <a href="mailto:giligus@gmail.com">giligus@gmail.com</a>
+        </div>
+      </form>
+    </dialog>
 
     <footer class="site-footer">
       <span>&copy; <span data-year></span> Gil. Built for GitHub Pages.</span>
