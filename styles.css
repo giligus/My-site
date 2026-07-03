@@ -155,12 +155,12 @@ a {
 }
 
 .button--primary {
-  background: var(--teal);
+  background: var(--ink);
   color: #fff;
 }
 
 .button--primary:hover {
-  background: var(--teal-dark);
+  background: #000;
 }
 
 .button--ghost {
