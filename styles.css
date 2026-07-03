@@ -245,12 +245,50 @@ a {
   border: 1px solid var(--line);
   border-radius: 8px;
   box-shadow: var(--shadow);
-  min-height: 390px;
+  min-height: 420px;
   padding: 26px;
+}
+
+.project-card__brand {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 22px;
+  min-height: 56px;
+}
+
+.project-card__brand > img {
+  height: 32px;
+  width: 32px;
+}
+
+.project-card__logo {
+  align-items: center;
+  background: #111418;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 800;
+  justify-content: center;
+  min-height: 54px;
+  min-width: 98px;
+  padding: 0 14px;
+}
+
+.project-card__logo img {
+  height: 34px;
+  width: 34px;
+}
+
+.project-card__logo--kan {
+  direction: ltr;
+  font-size: 1.1rem;
 }
 
 .project-card__tag {
   color: var(--coral);
+  display: block;
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -259,6 +297,10 @@ a {
 .project-card h3 {
   font-size: 1.35rem;
   margin: 42px 0 12px;
+}
+
+.project-card__brand + .project-card__tag + h3 {
+  margin-top: 22px;
 }
 
 .project-card p {
